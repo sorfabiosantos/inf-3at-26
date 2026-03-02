@@ -1,7 +1,9 @@
 # 📦 Programação Web II
 ## Exercício 02 – Classe `Order`
 
-### 🎯 Objetivo
+Uma plataforma de gestão de vendas precisa controlar cada pedido processado pelo sistema. A classe \`Order\` representa o pedido que trafega entre o checkout, a expedição e o financeiro, garantindo que o identificador interno (\`id\`), o nome do cliente e o valor total fiquem encapsulados. Assim, qualquer atualização passa pelos getters, setters e pelo método \`addFee\`, permitindo aplicar taxas de serviço ou ajustes logísticos de forma centralizada antes de apresentar o resultado final ao usuário ou integrar com outras camadas do sistema.
+
+## 🎯 Objetivo
 
 Praticar novamente a criação de classes em PHP consolidando:
 
