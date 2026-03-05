@@ -1,7 +1,9 @@
 # 📦 Programação Web II
 ## Exercício 01 – Classe `Product`
 
-Uma loja virtual precisa manipular o catálogo de produtos exibidos no e-commerce. Cada item possui código interno, nome comercial e preço base que servem para calcular descontos promocionais e exibir informações no carrinho e nos relatórios de vendas. Para manter os dados consistentes e garantir que qualquer alteração siga as regras do domínio, o sistema utiliza a classe `Product`, responsável por representar cada produto e fornecer métodos seguros para aplicar descontos, formatar preços e disponibilizar os valores para outras camadas da aplicação.
+## 🧭 Contextualizando
+
+Um e-commerce com milhares de itens ativos precisa de uma camada que descreva cada produto antes que ele seja enviado para o carrinho, vitrine ou ferramentas de relatório. A classe `Product` assume esse papel ao encapsular o identificador interno, o nome comercial e o preço base. Sempre que o time de marketing cria uma promoção ou o financeiro altera um valor, o objeto garante que os cálculos de desconto e a formatação de preço sigam um único padrão, evitando divergências entre os módulos da plataforma.
 
 ## 🎯 Objetivo
 

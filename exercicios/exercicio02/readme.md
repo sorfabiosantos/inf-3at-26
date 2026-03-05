@@ -1,7 +1,9 @@
 # 📦 Programação Web II
 ## Exercício 02 – Classe `Order`
 
-Uma plataforma de gestão de vendas precisa controlar cada pedido processado pelo sistema. A classe \`Order\` representa o pedido que trafega entre o checkout, a expedição e o financeiro, garantindo que o identificador interno (\`id\`), o nome do cliente e o valor total fiquem encapsulados. Assim, qualquer atualização passa pelos getters, setters e pelo método \`addFee\`, permitindo aplicar taxas de serviço ou ajustes logísticos de forma centralizada antes de apresentar o resultado final ao usuário ou integrar com outras camadas do sistema.
+## 🧭 Contextualizando
+
+No módulo de vendas de uma plataforma omnichannel, cada pedido passa por checkout, antifraude, expedição e faturamento. A classe `Order` funciona como o contrato único entre esses setores: ela guarda o identificador interno, o nome do cliente e o total calculado, permitindo que taxas logísticas e ajustes financeiros sejam aplicados de maneira controlada por meio de métodos específicos. Dessa forma, qualquer sistema que consome o pedido tem a garantia de que os dados exibidos refletem exatamente o que será cobrado e enviado ao consumidor.
 
 ## 🎯 Objetivo
 
@@ -34,4 +36,3 @@ Praticar novamente a criação de classes em PHP consolidando:
 5. Garanta que o código continue legível e organizado, mantendo o mesmo nível de dificuldade do Exercício 01.
 
 > Experimente alterar os valores e percentuais para observar os diferentes resultados do método `show`.
-
