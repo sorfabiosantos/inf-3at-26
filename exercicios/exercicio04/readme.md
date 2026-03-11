@@ -1,5 +1,5 @@
 # 📦 Programação Web II
-## Exercício 04 – Classes `Faq` e `Type`
+## Exercício 04 – Classes `Question` e `Type`
 
 ## 🧭 Contextualizando
 
