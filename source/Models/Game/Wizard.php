@@ -2,7 +2,7 @@
 
 namespace source\Models\Game;
 
-class Warrior
+class Wizard
 {
 
 }

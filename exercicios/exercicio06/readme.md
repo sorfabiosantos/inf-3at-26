@@ -24,17 +24,7 @@ Combinar **herança** e **composição** em PHP exercitando:
 
 ### Classe `User` (classe mãe)
 
-1. Crie a classe `User` com os seguintes atributos privados:
-    - `id` (int)
-    - `name` (string)
-    - `email` (string)
-    - `password` (string)
-
-2. Implemente o método construtor que receba e inicialize os quatro atributos.
-
-3. Implemente getters e setters para todos os atributos.
-
-4. Implemente um método chamado `show` que retorne as informações formatadas do usuário (`Usuário: #id - Nome: Nome - Email: email`).
+1. Reutilize a classe `User` criada no exercício anteriormente, a mesma encontra-se no arquivo `User.php` dentro da pasta `source/Models/`.
 
 ### Classe `Instructor` (filha de `User`)
 

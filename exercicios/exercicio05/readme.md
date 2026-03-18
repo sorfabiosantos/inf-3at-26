@@ -23,7 +23,7 @@ Praticar **herança** em PHP reutilizando a classe `User` como classe mãe:
 
 ### Classe `User` (classe mãe)
 
-1. Utilize a classe `User` já criada anteriormente que está em `source/Models/Hospital`.
+1. Utilize a classe `User` já criada anteriormente que está em `source/Models`.
 
 2. Implemente o método construtor que receba e inicialize os quatro atributos.
 
