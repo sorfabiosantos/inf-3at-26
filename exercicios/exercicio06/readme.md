@@ -67,8 +67,8 @@ Combinar **herança** e **composição** em PHP exercitando:
 
 1. Importe as classes utilizando `use`:
    ```php
-   use source\Models\Course\Instructor;
-   use source\Models\Course\Course;
+use source\Models\Course\Course;use source\Models\Course\Instructor;
+
    ```
 
 2. Instancie pelo menos **dois** objetos `Instructor` com formações diferentes.

@@ -1,7 +1,5 @@
 <?php
 
-use source\Models\Game\Warrior;
-
 class Client
 {
     protected $name;
@@ -35,7 +33,7 @@ class Client
 
 }
 
-class Company extends Warrior
+class Company extends Client
 {
     private $cnpj;
 
