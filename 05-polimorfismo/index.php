@@ -12,7 +12,7 @@ class Dog extends Animal
 {
     public function makeSound(): string
     {
-        //echo parent::makeSound() . "<br>";
+        echo parent::makeSound() . "<br>";
         return "Au Au!";
     }
 }
@@ -27,13 +27,15 @@ class Cat extends Animal
 
 $animal = new Animal();
 var_dump($animal);
-echo "Animal: " . $animal->makeSound() . "<br>";
+echo $animal->makeSound() . "<br>";
 
 $dog = new Dog();
-echo "Cachorro: " . $dog->makeSound() . "<br>";
+var_dump($dog);
+echo $dog->makeSound(). "<br>";
 
 $cat = new Cat();
-echo "Gato: " . $cat->makeSound() . "<br>";
+var_dump($cat);
+echo $cat->makeSound(). "<br>";
 
 
 $animals = [
