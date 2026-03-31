@@ -30,7 +30,10 @@ class Course
     private ?int $workload;
     private ?Professor $professor;
 
-    public function __construct(?string $title, ?int $workload, ?Professor $professor = null)
+    public function __construct(
+        ?string $title,
+        ?int $workload,
+        ?Professor $professor = null)
     {
         $this->title = $title;
         $this->workload = $workload;
@@ -58,6 +61,9 @@ class Course
 
 $professor = new Professor("Maria Silva", "maria@gmail.com");
 $course = new Course("PHP OOP", 40, $professor);
+
+var_dump($professor, $course);
+
 
 echo "Exemplo de Associação" . "<br>";
 echo "----------------------" . "<br>";
