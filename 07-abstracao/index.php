@@ -15,6 +15,7 @@ abstract class PaymentMethod
     }
     
     abstract public function process();
+    abstract public function redirect();
 
 }
 
@@ -23,6 +24,11 @@ class PixPayment extends PaymentMethod
     public function process(): string
     {
         return "Gerando o QR-code para R$ {$this->amount}... PIX realizado com sucesso!";
+    }
+
+    public function redirect(): string
+    {
+        return "Redirecionando para a página de pagamento PIX...";
     }
 
 }
@@ -34,14 +40,22 @@ class CardPayment extends PaymentMethod
         return "Conectando... Pagamento R$ {$this->amount} realizado com sucesso!";
     }
 
+    public function redirect(): string
+    {
+        return "Redirecionando para a página de pagamento do Cartão de Crédito...";
+    }
+
 }
-// não pode classes abstratas não podem ser instanciadas
+// não pode, classes abstratas não podem ser instanciadas
 // $payment = new PaymentMethod();
+
 
 $pix = new PixPayment(150.00);
 echo $pix->displayAmount() . "<br>";
 echo $pix->process() . "<br><br>";
+echo $pix->redirect() . "<br><br>";
 
 $card = new CardPayment(2500.50);
 echo $card->displayAmount() . "<br>";
 echo $card->process() . "<br><br>";
+echo $card->redirect() . "<br><br>";
