@@ -2,9 +2,9 @@
 
 abstract class PaymentMethod
 {
-    protected float $amount;
+    protected ?float $amount;
 
-    public function __construct($amount)
+    public function __construct(?float $amount = null)
     {
         $this->amount = $amount;
     }
@@ -19,6 +19,8 @@ abstract class PaymentMethod
 
 }
 
+
+
 class PixPayment extends PaymentMethod
 {
     public function process(): string
@@ -28,7 +30,7 @@ class PixPayment extends PaymentMethod
 
     public function redirect(): string
     {
-        return "Redirecionando para a página de pagamento PIX...";
+        return "Redirecionando para página do PIX";
     }
 
 }
@@ -42,15 +44,14 @@ class CardPayment extends PaymentMethod
 
     public function redirect(): string
     {
-        return "Redirecionando para a página de pagamento do Cartão de Crédito...";
+        return "Redirecionando para página da Operadora do Cartão de Crédito";
     }
 
 }
 // não pode, classes abstratas não podem ser instanciadas
 // $payment = new PaymentMethod();
 
-
-$pix = new PixPayment(150.00);
+$pix = new PixPayment(150);
 echo $pix->displayAmount() . "<br>";
 echo $pix->process() . "<br><br>";
 echo $pix->redirect() . "<br><br>";
