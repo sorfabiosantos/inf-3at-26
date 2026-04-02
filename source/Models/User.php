@@ -4,11 +4,12 @@ namespace source\Models;
 
 class User
 {
-    private $id;
-    private $name;
-    private $email;
-    private $password;
-    private $photo;
+    private ?int $id;
+    private ?string  $name;
+    private ?string $email;
+    private ?string $password;
+    private ?string $photo;
+
     public function __construct(int $id = null, string $name = null,string $email = null,string $password = null,string $photo = null)
     {
         $this->id = $id;
