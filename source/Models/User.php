@@ -5,12 +5,12 @@ namespace source\Models;
 class User
 {
     private ?int $id;
-    private ?string  $name;
+    private ?string $name;
     private ?string $email;
     private ?string $password;
     private ?string $photo;
 
-    public function __construct(int $id = null, string $name = null,string $email = null,string $password = null,string $photo = null)
+    public function __construct(int $id = null, string $name = null, string $email = null, string $password = null, string $photo = null)
     {
         $this->id = $id;
         $this->name = $name;
@@ -69,4 +69,9 @@ class User
         $this->photo = $photo;
     }
 
+    public function show(): string
+    {
+        return "Usuário: #{$this->id} - Nome: {$this->name} - Email: {$this->email}";
+    }
 }
+

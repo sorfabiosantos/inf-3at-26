@@ -57,8 +57,8 @@ Praticar a criação de classes em PHP consolidando:
 
 1. Importe as classes utilizando `use`:
    ```php
-   use source\Models\Faq\Type;
-   use source\Models\Faq\Question;
+
+
    ```
 2. Instancie pelo menos **dois** objetos `Type` representando categorias diferentes (ex.: "Inscrições" e "Sobre o Evento").
 3. Instancie pelo menos **duas** Questions, cada uma vinculada a um tipo diferente.
