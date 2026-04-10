@@ -1,4 +1,4 @@
-# 🏋️ Programação Web II — Avaliação (Prova G)
+# 🏋️ Programação Web II — Avaliação
 
 ## 📋 Instruções Gerais
 
