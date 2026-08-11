@@ -198,7 +198,7 @@ Combinar **herança**, **polimorfismo** e **associação** em PHP exercitando:
    use source\Models\Library\PhysicalBook;
    use source\Models\Library\Ebook;
    use source\Models\Library\Audiobook;
-   use source\Models\Library\Loan;
+   use gabarito\source\Models\Library\Loan;
    ```
 
 2. Instancie pelo menos **dois** objetos `Author` com dados diferentes.

@@ -4,7 +4,7 @@ require __DIR__ . "/../../source/autoload.php";
 //require __DIR__. "/../../source/Models/User.php";
 //require __DIR__. "/../../source/Models/Product.php";
 
-use source\Models\Product;
+use ramos\source\Models\Store\Product;
 use source\Models\User;
 
 $product = new Product(2, "Computador", 10000);

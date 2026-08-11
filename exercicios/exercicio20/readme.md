@@ -145,9 +145,9 @@ Praticar **associação** em PHP modelando um sistema de biblioteca com múltipl
 1. Importe as classes utilizando `use`:
    ```php
    use source\Models\Library\Author;
-   use source\Models\Library\Book;
+   use gabarito\source\Models\Library\Book;
    use source\Models\Library\Library;
-   use source\Models\Library\Loan;
+   use gabarito\source\Models\Library\Loan;
    ```
 
 2. Instancie pelo menos **dois** objetos `Author`.

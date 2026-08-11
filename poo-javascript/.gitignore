@@ -1,0 +1,9 @@
+node_modules/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+*.log
+
+# Gabarito dos exercícios (não disponível para alunos)
+plans/gabarito-exercicios.js
