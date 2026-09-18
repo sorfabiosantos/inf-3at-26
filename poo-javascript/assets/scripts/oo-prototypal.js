@@ -20,7 +20,7 @@
         price: 299.90
     };
 
-    console.group("1. Todo objeto herda de Object.prototype");
+    console.group("1.... Todo objeto herda de Object.prototype");
     console.log(`typeof product: ${typeof product}`);
     console.log(`Object.getPrototypeOf(product) === Object.prototype: ${Object.getPrototypeOf(product) === Object.prototype}`);
     console.log(`product.__proto__ === Object.prototype: ${product.__proto__ === Object.prototype}`);
@@ -87,6 +87,23 @@ console.groupEnd();
 // 2. Crie uma cadeia: Vehicle → Car → myCar.
 //    Cada nível adiciona propriedades/métodos.
 //    Use Object.getPrototypeOf() para verificar a cadeia.
+
+const Vehicle = {
+    getFormattedPrice() {
+        return `R$ ${this.price.toFixed(2)}`;
+    }
+}
+
+const car = Object.create(Vehicle);
+car.run = function () {
+
+};
+
+const myCar = Object.create(car);
+myCar.open = function () {
+
+};
+console.log(car, myCar);
 
 // 3. Crie um objeto `student` com protótipo contendo `calculateAverage()`.
 //    No filho, adicione `grade` que sombreia `grade` do protótipo.
